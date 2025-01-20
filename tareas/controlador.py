@@ -29,7 +29,6 @@ def completeTask(task_id: int, file: str) -> bool:
             return True
     return False
 
-
 def deleteTask(task_id, file):
         tasks = loadTasks(file)
         tasks = [task for task in tasks if task["id"] != task_id]
